@@ -38,7 +38,6 @@ parser.add_argument('--collision_thresh', type=float, default=0.01,
 parser.add_argument('--voxel_size_cd', type=float, default=0.01, help='Voxel Size for collision detection')
 cfgs = parser.parse_args()
 
-
 class ImageInfo():
     def __init__(self):
         self.im_height = 720
@@ -91,6 +90,36 @@ def create_point_cloud_from_depth_image(depth, camera, organized=True):
         cloud = cloud.reshape([-1, 3])
     return cloud
 
+#################################################################################################
+# 新加内容
+def creat_ROI(color_image):
+    '''Input: rgb_image.    Output: ROI_left_up_point, ROI_right_bottom_point'''
+    color_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB)
+    def draw_rectangle(event, x, y, flags, param):
+        global ROI_left_up_point, ROI_right_bottom_point
+        global drawing
+        
+        if event == cv2.EVENT_LBUTTONDOWN:
+            drawing = True
+            ROI_left_up_point = (x, y)
+        elif event == cv2.EVENT_MOUSEMOVE:
+            if drawing:
+                cv2.rectangle(color_image, ROI_left_up_point, (x, y), (0,0,255),thickness=1)
+        elif event == cv2.EVENT_LBUTTONUP:
+            drawing = False
+            ROI_right_bottom_point = (x, y)
+            
+    cv2.namedWindow('color_image', cv2.WINDOW_AUTOSIZE)
+    cv2.setMouseCallback('color_image', draw_rectangle)
+    while(True):
+        cv2.imshow('color_image', color_image)
+        k = cv2.waitKey(1) & 0xff
+        if k == 27:
+            break
+    cv2.destroyAllWindows() 
+    print('ROI区域:', ROI_left_up_point, ROI_right_bottom_point)
+    return ROI_left_up_point, ROI_right_bottom_point
+###################################################################################################
 
 
 class Graspness():
@@ -117,6 +146,10 @@ class Graspness():
         
         root = '/home/ssm/QCIT/graspness/'
         rgb, depth = self.get_color_depth_data()
+        
+        # 新加
+        ROI_left_up_point, ROI_right_bottom_point = creat_ROI(rgb)
+        #
         color = rgb.astype(np.float32) / 255
         depth = depth.astype(np.float32)
         print('[INFO] color shape:{}, depth shape:{}'.format(color.shape, depth.shape))
@@ -179,7 +212,8 @@ class Graspness():
                     'coors': (cloud_sampled.astype(np.float32) / cfgs.voxel_size).astype(np.float32),
                     'feats': np.ones_like(cloud_sampled).astype(np.float32),
                     }
-        return ret_dict,cloud,point_left_up,point_right_bottom
+        return ret_dict,cloud,point_left_up,point_right_bottom, ROI_left_up_point, ROI_right_bottom_point
+        # return ret_dict,cloud,point_left_up,point_right_bottom
         
         
         
@@ -195,7 +229,9 @@ class Graspness():
         self.net.eval()
         
         
-    def grasp(self, data_input, cloud_, point_left_up, point_right_bottom):
+    def grasp(self, data_input, cloud_, point_left_up, point_right_bottom, ROI_left_up_point, ROI_right_bottom_point):
+    # def grasp(self, data_input, cloud_, point_left_up, point_right_bottom):
+        
         batch_data = minkowski_collate_fn([data_input])
         for key in batch_data:
             if 'list' in key:
@@ -236,6 +272,29 @@ class Graspness():
             print('[INFO] detect nothing or have no grasp pose')
             return False
         gg.sort_by_score()
+        print('[INFO]workspace:{}'.format(len(gg)))
+        
+        grippers = gg.to_open3d_geometry_list()
+        grippers[0].paint_uniform_color([0, 1, 0])
+        o3d.visualization.draw_geometries([cloud_, *grippers])
+        
+        
+        R_grasp2camera, t_grasp2camera = gg[0].rotation_matrix, gg[0].translation
+        print(R_grasp2camera,t_grasp2camera)
+        print('point_left_up={}'.format(point_left_up))
+        
+        
+        
+        # 剔除不在 ROI 区域的抓握姿态
+        for i in range(len(gg)-1, -1, -1):
+            if gg[i].translation[0]< ROI_left_up_point[0]+0.02 or gg[i].translation[0] > ROI_right_bottom_point[0]-0.02\
+                    or gg[i].translation[1]<ROI_left_up_point[1]+0.02 or gg[i].translation[1] > ROI_right_bottom_point[1]-0.02:
+                gg.remove(i)
+                
+        if len(gg) == 0:
+            print('[INFO] detect nothing or have no grasp pose')
+            return False
+        gg.sort_by_score()
         
         grippers = gg.to_open3d_geometry_list()
         grippers[0].paint_uniform_color([0, 1, 0])
@@ -243,6 +302,8 @@ class Graspness():
         
         R_grasp2camera, t_grasp2camera = gg[0].rotation_matrix, gg[0].translation
         print(R_grasp2camera,t_grasp2camera)
+        # print('gg0 = {}'.format(gg[0]))
+        print('point_left_up={}'.format(point_left_up))
         return True
 
         
@@ -252,6 +313,13 @@ class Graspness():
         
 if __name__ == '__main__':
     image_demo = Graspness()
-    a, b, c, d = image_demo.data_process()
-    image_demo.grasp(a, b, c, d)
+    a, b, c, d, e, f = image_demo.data_process()
+    # a, b, c, d = image_demo.data_process()
+    
+    image_demo.grasp(a, b, c, d, e, f)
+    # image_demo.grasp(a, b, c, d)
+    
+    # image = ImageInfo()
+    # color_image, depth_image = image.get_data()
+    # creat_ROI(color_image)
 
