@@ -300,6 +300,7 @@ class Graspness():
         
 if __name__ == '__main__':
     image_demo = Graspness()
-    a, b, c, d = image_demo.data_process()
-    image_demo.grasp(a,b,c,d)
+    while(True):
+        a, b, c, d = image_demo.data_process()
+        image_demo.grasp(a,b,c,d)
 
