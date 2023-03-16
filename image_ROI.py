@@ -146,6 +146,7 @@ class Graspness():
         cv2.destroyAllWindows() 
         print('ROI区域:', ROI_left_up_point, ROI_right_bottom_point)
         return ROI_left_up_point, ROI_right_bottom_point
+    
     def get_color_depth_data(self):
         # self.image.plot_image() #按任意键跳出   waitkey()
         return self.image.get_data()

@@ -1,5 +1,6 @@
 import os
 import sys
+import cv2
 import numpy as np
 import argparse
 from PIL import Image
@@ -42,6 +43,42 @@ class Graspness():
         self.device = None
         self.init_grasp_net()
         print("init success!")
+        
+    def creat_ROI(self, color_image) -> tuple:
+        '''Input: rgb_image.    Output: ROI_left_up_point, ROI_right_bottom_point'''
+        color_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB)
+        global img
+        img = color_image.copy()
+        def draw_rectangle(event, x, y, flags, param):
+            global ROI_left_up_point, ROI_right_bottom_point
+            global drawing
+            global img
+            img = color_image.copy()
+            cv2.imshow('color_image', img)
+            if event == cv2.EVENT_LBUTTONDOWN:
+                drawing = True
+                ROI_left_up_point = (x, y)
+            elif event == cv2.EVENT_MOUSEMOVE:
+                if drawing:
+                    cv2.rectangle(img, ROI_left_up_point, (x, y), (0,0,255), thickness=2)
+                    cv2.imshow('color_image', img)
+            elif event == cv2.EVENT_LBUTTONUP:
+                drawing = False
+                ROI_right_bottom_point = (x, y)
+                cv2.rectangle(color_image, ROI_left_up_point, (x, y), (0,0,255), thickness=2)
+                cv2.imshow('color_image', img)
+        
+        cv2.namedWindow('color_image', cv2.WINDOW_AUTOSIZE)
+        cv2.setMouseCallback('color_image', draw_rectangle)
+        while(True):
+            if not drawing:
+                cv2.imshow('color_image', color_image)
+            key = cv2.waitKey(1)
+            if key & 0xFF == ord('q') or key == 27:
+                break
+        cv2.destroyAllWindows() 
+        print('ROI区域:', ROI_left_up_point, ROI_right_bottom_point)
+        return ROI_left_up_point, ROI_right_bottom_point
     
     def get_color_depth_data(self):
         self.rgbd_cam_d435.plot_image_stream() #按q退出视频流
@@ -56,7 +93,7 @@ class Graspness():
         rgb, depth = self.get_color_depth_data()
         color = rgb.astype(np.float32) / 255
         depth = depth.astype(np.float32)
-
+        left_up_point, right_bottom_point = self.creat_ROI(rgb)
         # workspace_mask = np.array(Image.open(os.path.join(root,'doc/example_data', 'mask_all.png'))).astype(bool) #[720,1280][241false,978false]
         workspace_mask = np.array(Image.open(os.path.join(root,'doc/example_data', 'workspace_mask.png'))) #[720,1280][241false,978false]
         camera = CameraInfo(1280.0, 720.0, intrinsic[0][0], intrinsic[1][1], intrinsic[0][2], intrinsic[1][2], factor_depth)
@@ -65,8 +102,10 @@ class Graspness():
         # x_right_bottom,y_right_bottom = 480-25,640-25
         # x_left_up,y_left_up = 0+25,242+25
         # x_right_bottom,y_right_bottom = 719-25,977-25
-        x_left_up,y_left_up = 0+50,0+50
-        x_right_bottom,y_right_bottom = 720-50,1280-50
+        # x_left_up,y_left_up = 0+50,0+50
+        # x_right_bottom,y_right_bottom = 720-50,1280-50
+        x_left_up,y_left_up = left_up_point[1],left_up_point[0]
+        x_right_bottom,y_right_bottom = right_bottom_point[1],right_bottom_point[0]
         point_z = depth[x_left_up,y_left_up] / camera.scale
         point_x = (y_left_up - camera.cx) * point_z / camera.fx
         point_y = (x_left_up - camera.cy) * point_z / camera.fy
