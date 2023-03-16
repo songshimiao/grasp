@@ -25,6 +25,9 @@ sys.path.append(os.path.join(ROOT_DIR, 'utils'))
 from models.graspnet import GraspNet, pred_decode
 from dataset.graspnet_dataset import minkowski_collate_fn
 from collision_detector import ModelFreeCollisionDetector
+from data_utils import CameraInfo, create_point_cloud_from_depth_image, get_workspace_mask
+# from UR_Robot import UR_Robot
+from realsenseD435 import RealsenseD435
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--checkpoint_path', default=ROOT_DIR+'/np15000_graspness1e-1_bs4_lr1e-3_viewres_dataaug_fps_14D_epoch10.tar')
@@ -38,6 +41,9 @@ parser.add_argument('--collision_thresh', type=float, default=0.01,
 parser.add_argument('--voxel_size_cd', type=float, default=0.01, help='Voxel Size for collision detection')
 cfgs = parser.parse_args()
 drawing = False
+ROI_left_up_point = None
+ROI_right_bottom_point = None
+img = None
 
 class ImageInfo():
     def __init__(self):
@@ -91,49 +97,6 @@ def create_point_cloud_from_depth_image(depth, camera, organized=True):
         cloud = cloud.reshape([-1, 3])
     return cloud
 
-#################################################################################################
-# 新加内容
-def draw_rectangle(event, x, y, color_image, flags, param):
-        # global ROI_left_up_point, ROI_right_bottom_point
-        global drawing
-        if event == cv2.EVENT_LBUTTONDOWN:
-            drawing = True
-            ROI_left_up_point = (x, y)
-        elif event == cv2.EVENT_MOUSEMOVE:
-            if drawing:
-                cv2.rectangle(color_image, ROI_left_up_point, (x, y), (0,0,255),thickness=1)
-        elif event == cv2.EVENT_LBUTTONUP:
-            drawing = False
-            ROI_right_bottom_point = (x, y)
-            
-def creat_ROI(color_image):
-    '''Input: rgb_image.    Output: ROI_left_up_point, ROI_right_bottom_point'''
-    color_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB)
-    img = color_image.copy()
-    # def draw_rectangle(event, x, y, flags, param):
-    #     global ROI_left_up_point, ROI_right_bottom_point
-    #     global drawing
-    #     if event == cv2.EVENT_LBUTTONDOWN:
-    #         drawing = True
-    #         ROI_left_up_point = (x, y)
-    #     elif event == cv2.EVENT_MOUSEMOVE:
-    #         if drawing:
-    #             cv2.rectangle(color_image, ROI_left_up_point, (x, y), (0,0,255),thickness=1)
-    #     elif event == cv2.EVENT_LBUTTONUP:
-    #         drawing = False
-    #         ROI_right_bottom_point = (x, y)
-            
-    cv2.namedWindow('color_image', cv2.WINDOW_AUTOSIZE)
-    cv2.setMouseCallback('color_image', draw_rectangle, color_image)
-    while(True):
-        cv2.imshow('color_image', color_image)
-        k = cv2.waitKey(1) & 0xff
-        if k == 27:
-            break
-    cv2.destroyAllWindows() 
-    # print('ROI区域:', ROI_left_up_point, ROI_right_bottom_point)
-    # return ROI_left_up_point, ROI_right_bottom_point
-###################################################################################################
 
 
 class Graspness():
@@ -148,7 +111,41 @@ class Graspness():
         self.init_grasp_net()
         print('[INFO] Init success.')
         
+    def creat_ROI(self, color_image) -> tuple:
+        '''Input: rgb_image.    Output: ROI_left_up_point, ROI_right_bottom_point'''
+        color_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB)
+        global img
+        img = color_image.copy()
+        def draw_rectangle(event, x, y, flags, param):
+            global ROI_left_up_point, ROI_right_bottom_point
+            global drawing
+            global img
+            img = color_image.copy()
+            cv2.imshow('color_image', img)
+            if event == cv2.EVENT_LBUTTONDOWN:
+                drawing = True
+                ROI_left_up_point = (x, y)
+            elif event == cv2.EVENT_MOUSEMOVE:
+                if drawing:
+                    cv2.rectangle(img, ROI_left_up_point, (x, y), (0,0,255), thickness=2)
+                    cv2.imshow('color_image', img)
+            elif event == cv2.EVENT_LBUTTONUP:
+                drawing = False
+                ROI_right_bottom_point = (x, y)
+                cv2.rectangle(color_image, ROI_left_up_point, (x, y), (0,0,255), thickness=2)
+                cv2.imshow('color_image', img)
         
+        cv2.namedWindow('color_image', cv2.WINDOW_AUTOSIZE)
+        cv2.setMouseCallback('color_image', draw_rectangle)
+        while(True):
+            if not drawing:
+                cv2.imshow('color_image', color_image)
+            key = cv2.waitKey(1)
+            if key & 0xFF == ord('q') or key == 27:
+                break
+        cv2.destroyAllWindows() 
+        print('ROI区域:', ROI_left_up_point, ROI_right_bottom_point)
+        return ROI_left_up_point, ROI_right_bottom_point
     def get_color_depth_data(self):
         # self.image.plot_image() #按任意键跳出   waitkey()
         return self.image.get_data()
@@ -160,19 +157,20 @@ class Graspness():
         
         root = '/home/ssm/QCIT/graspness/'
         rgb, depth = self.get_color_depth_data()
-        
-        # 新加
-        ROI_left_up_point, ROI_right_bottom_point = creat_ROI(rgb)
-        #
         color = rgb.astype(np.float32) / 255
         depth = depth.astype(np.float32)
+
+        ROI_left_up_point, ROI_right_bottom_point = self.creat_ROI(rgb)
+
         print('[INFO] color shape:{}, depth shape:{}'.format(color.shape, depth.shape))
         
         workspace_mask = np.array(Image.open(os.path.join(root, 'doc/example_data', 'workspace_mask.png')))
         camera = CameraInfo(1280.0, 720.0, intrinsic[0][0], intrinsic[1][1], intrinsic[0][2], intrinsic[1][2], factor_depth)
         
-        x_left_up,y_left_up = 0+50,0+50
-        x_right_bottom,y_right_bottom = 720-50,1280-50
+        # x_left_up,y_left_up = 0+50,0+50
+        # x_right_bottom,y_right_bottom = 720-50,1280-50
+        x_left_up,y_left_up = ROI_left_up_point[1],ROI_left_up_point[0]
+        x_right_bottom,y_right_bottom = ROI_right_bottom_point[1],ROI_right_bottom_point[0]        
         point_z = depth[x_left_up,y_left_up] / camera.scale
         point_x = (y_left_up - camera.cx) * point_z / camera.fx
         point_y = (x_left_up - camera.cy) * point_z / camera.fy
@@ -226,8 +224,7 @@ class Graspness():
                     'coors': (cloud_sampled.astype(np.float32) / cfgs.voxel_size).astype(np.float32),
                     'feats': np.ones_like(cloud_sampled).astype(np.float32),
                     }
-        return ret_dict,cloud,point_left_up,point_right_bottom, ROI_left_up_point, ROI_right_bottom_point
-        # return ret_dict,cloud,point_left_up,point_right_bottom
+        return ret_dict,cloud,point_left_up,point_right_bottom
         
         
         
@@ -241,11 +238,8 @@ class Graspness():
         start_epoch = checkpoint['epoch']
         print('[INFO] loaded checkpoint %s (epoch: %d)' % (cfgs.checkpoint_path, start_epoch))
         self.net.eval()
-        
-        
-    def grasp(self, data_input, cloud_, point_left_up, point_right_bottom, ROI_left_up_point, ROI_right_bottom_point):
-    # def grasp(self, data_input, cloud_, point_left_up, point_right_bottom):
-        
+
+    def grasp(self, data_input, cloud_, point_left_up, point_right_bottom):
         batch_data = minkowski_collate_fn([data_input])
         for key in batch_data:
             if 'list' in key:
@@ -294,30 +288,9 @@ class Graspness():
         
         
         R_grasp2camera, t_grasp2camera = gg[0].rotation_matrix, gg[0].translation
-        print(R_grasp2camera,t_grasp2camera)
-        print('point_left_up={}'.format(point_left_up))
+        width = gg[0].width * 10 + 0.05
+        print(R_grasp2camera,t_grasp2camera,width)
         
-        
-        
-        # 剔除不在 ROI 区域的抓握姿态
-        for i in range(len(gg)-1, -1, -1):
-            if gg[i].translation[0]< ROI_left_up_point[0]+0.02 or gg[i].translation[0] > ROI_right_bottom_point[0]-0.02\
-                    or gg[i].translation[1]<ROI_left_up_point[1]+0.02 or gg[i].translation[1] > ROI_right_bottom_point[1]-0.02:
-                gg.remove(i)
-                
-        if len(gg) == 0:
-            print('[INFO] detect nothing or have no grasp pose')
-            return False
-        gg.sort_by_score()
-        
-        grippers = gg.to_open3d_geometry_list()
-        grippers[0].paint_uniform_color([0, 1, 0])
-        o3d.visualization.draw_geometries([cloud_, *grippers])
-        
-        R_grasp2camera, t_grasp2camera = gg[0].rotation_matrix, gg[0].translation
-        print(R_grasp2camera,t_grasp2camera)
-        # print('gg0 = {}'.format(gg[0]))
-        print('point_left_up={}'.format(point_left_up))
         return True
 
         
@@ -327,13 +300,6 @@ class Graspness():
         
 if __name__ == '__main__':
     image_demo = Graspness()
-    a, b, c, d, e, f = image_demo.data_process()
-    # a, b, c, d = image_demo.data_process()
-    
-    image_demo.grasp(a, b, c, d, e, f)
-    # image_demo.grasp(a, b, c, d)
-    
-    # image = ImageInfo()
-    # color_image, depth_image = image.get_data()
-    # creat_ROI(color_image)
+    a, b, c, d = image_demo.data_process()
+    image_demo.grasp(a,b,c,d)
 
