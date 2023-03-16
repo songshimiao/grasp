@@ -21,6 +21,11 @@ from data_utils import CameraInfo, create_point_cloud_from_depth_image, get_work
 # from UR_Robot import UR_Robot
 from realsenseD435 import RealsenseD435
 
+drawing = False
+ROI_left_up_point = None
+ROI_right_bottom_point = None
+img = None
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--checkpoint_path', default=ROOT_DIR+'/np15000_graspness1e-1_bs4_lr1e-3_viewres_dataaug_fps_14D_epoch10.tar')
 #default='realsense_1120_epoch10.tar')

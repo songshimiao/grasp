@@ -87,8 +87,8 @@ class RealsenseD435(object):
         
         cv2.namedWindow('RealSense_depth', cv2.WINDOW_AUTOSIZE)
         cv2.imshow('RealSense_depth', depth_colormap)
-        cv2.imwrite('/home/chassis/chassis_ws/src/chassis_packages/graspness/color_image_self.png', color_image)
-        cv2.imwrite('/home/chassis/chassis_ws/src/chassis_packages/graspness/depth_image_self.png', depth_image)
+        cv2.imwrite('/home/ssm/QCIT/graspness/color_image_5.png', color_image)
+        cv2.imwrite('/home/ssm/QCIT/graspness/depth_image_5.png', depth_image)
         key = cv2.waitKey(1)
         # Press esc or 'q' to close the image window
         if key & 0xFF == ord('q') or key == 27:
