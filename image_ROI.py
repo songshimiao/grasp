@@ -39,6 +39,8 @@ parser.add_argument('--voxel_size', type=float, default=0.005, help='Voxel Size 
 parser.add_argument('--collision_thresh', type=float, default=0.01,
                     help='Collision Threshold in collision detection [default: 0.01]')
 parser.add_argument('--voxel_size_cd', type=float, default=0.01, help='Voxel Size for collision detection')
+parser.add_argument('--rgb', default='color_image_self.png', help='color_image')
+parser.add_argument('--depth', default='depth_image_self.png', help='depth_image')
 cfgs = parser.parse_args()
 drawing = False
 ROI_left_up_point = None
@@ -54,8 +56,8 @@ class ImageInfo():
         # color_image = cv2.imread(ROOT_DIR+'/color_image_self.png')
         # depth_image = cv2.imread(ROOT_DIR+'/depth_image_self.png')
         # depth_image = cv2.cvtColor(depth_image, cv2.COLOR_BGR2GRAY)
-        color_image = np.array(Image.open(os.path.join(ROOT_DIR, 'color_image_self.png')))
-        depth_image = np.array(Image.open(os.path.join(ROOT_DIR, 'depth_image_self.png')))
+        color_image = np.array(Image.open(os.path.join(ROOT_DIR, cfgs.rgb)))
+        depth_image = np.array(Image.open(os.path.join(ROOT_DIR, cfgs.depth)))
 
         return color_image, depth_image
     
