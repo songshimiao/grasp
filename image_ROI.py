@@ -37,6 +37,7 @@ parser.add_argument('--collision_thresh', type=float, default=0.01,
                     help='Collision Threshold in collision detection [default: 0.01]')
 parser.add_argument('--voxel_size_cd', type=float, default=0.01, help='Voxel Size for collision detection')
 cfgs = parser.parse_args()
+drawing = False
 
 class ImageInfo():
     def __init__(self):
@@ -92,13 +93,9 @@ def create_point_cloud_from_depth_image(depth, camera, organized=True):
 
 #################################################################################################
 # 新加内容
-def creat_ROI(color_image):
-    '''Input: rgb_image.    Output: ROI_left_up_point, ROI_right_bottom_point'''
-    color_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB)
-    def draw_rectangle(event, x, y, flags, param):
-        global ROI_left_up_point, ROI_right_bottom_point
+def draw_rectangle(event, x, y, color_image, flags, param):
+        # global ROI_left_up_point, ROI_right_bottom_point
         global drawing
-        
         if event == cv2.EVENT_LBUTTONDOWN:
             drawing = True
             ROI_left_up_point = (x, y)
@@ -109,16 +106,33 @@ def creat_ROI(color_image):
             drawing = False
             ROI_right_bottom_point = (x, y)
             
+def creat_ROI(color_image):
+    '''Input: rgb_image.    Output: ROI_left_up_point, ROI_right_bottom_point'''
+    color_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB)
+    img = color_image.copy()
+    # def draw_rectangle(event, x, y, flags, param):
+    #     global ROI_left_up_point, ROI_right_bottom_point
+    #     global drawing
+    #     if event == cv2.EVENT_LBUTTONDOWN:
+    #         drawing = True
+    #         ROI_left_up_point = (x, y)
+    #     elif event == cv2.EVENT_MOUSEMOVE:
+    #         if drawing:
+    #             cv2.rectangle(color_image, ROI_left_up_point, (x, y), (0,0,255),thickness=1)
+    #     elif event == cv2.EVENT_LBUTTONUP:
+    #         drawing = False
+    #         ROI_right_bottom_point = (x, y)
+            
     cv2.namedWindow('color_image', cv2.WINDOW_AUTOSIZE)
-    cv2.setMouseCallback('color_image', draw_rectangle)
+    cv2.setMouseCallback('color_image', draw_rectangle, color_image)
     while(True):
         cv2.imshow('color_image', color_image)
         k = cv2.waitKey(1) & 0xff
         if k == 27:
             break
     cv2.destroyAllWindows() 
-    print('ROI区域:', ROI_left_up_point, ROI_right_bottom_point)
-    return ROI_left_up_point, ROI_right_bottom_point
+    # print('ROI区域:', ROI_left_up_point, ROI_right_bottom_point)
+    # return ROI_left_up_point, ROI_right_bottom_point
 ###################################################################################################
 
 
