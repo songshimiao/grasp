@@ -221,4 +221,3 @@ if __name__== '__main__':
 #         self.is_recording = True
 #     def stop_recording(self):
 #         self.is_recording = False
-
