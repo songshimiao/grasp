@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-26T07:59:01.909Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="QQIeToJGd-r05HbJP3HN" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-26T08:12:50.179Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="0Q9cpVQII5sI-Ni4H7HX" version="22.1.11" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="928" dy="524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="752" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -291,20 +291,55 @@
             <mxRectangle x="10" y="71.25" width="70" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-14" value="ROOT_DIR : &quot;~/graspnet-baseline&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-14" value="ROOT_DIR : &quot;~/graspnet-baseline&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
           <mxGeometry x="10" y="41.25" width="270" height="18.75" as="geometry" />
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-15" value="sys.path 1 : &quot;~/graspnet-baseline/utils&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-15" value="sys.path 1 : &quot;~/graspnet-baseline/utils&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
           <mxGeometry x="10" y="70" width="270" height="18.75" as="geometry" />
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-16" value="sys.path 2 : &quot;~/graspnet-baseline/pointnet2&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-16" value="sys.path 2 : &quot;~/graspnet-baseline/pointnet2&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
           <mxGeometry x="10" y="98.75" width="270" height="18.75" as="geometry" />
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-17" value="sys.path 3 : &quot;~/graspnet-baseline/models&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-17" value="sys.path 3 : &quot;~/graspnet-baseline/models&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
           <mxGeometry x="10" y="128.75" width="270" height="18.75" as="geometry" />
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-18" value="sys.path 4 : &quot;~/graspnet-baseline/dataset&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-18" value="sys.path 4 : &quot;~/graspnet-baseline/dataset&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
           <mxGeometry x="10" y="158.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-19" value="Path" style="swimlane;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=4;fontFamily=Times New Roman;fontSize=15;startSize=29;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
+          <mxGeometry x="10" y="281.25" width="290" height="348.75" as="geometry">
+            <mxRectangle x="10" y="71.25" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-20" value="cfgs.batch_size : 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="41.25" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-21" value="cfgs.bn_decay_rate : 0.5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="70" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-22" value="cfgs.bn_decay_step : 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="98.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-23" value="cfgs.camera : &quot;realsense&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="128.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-24" value="cfgs.checkpoint_path : &quot;~/GraspNetDataset&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="158.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-25" value="cfgs.learning_rate : 0.001" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="188.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-26" value="cfgs.log_dir : &quot;logs/logs_rs&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="218.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-27" value="cfgs.lr_decay_rates : &quot;0.1, 0.1, 0.1&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="248.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-28" value="cfgs.lr_decay_steps : &quot;8, 12 ,16&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="278.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-29" value="cfgs.max_epoch : 18" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="308.75" width="270" height="18.75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
