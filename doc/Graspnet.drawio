@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-26T08:19:06.982Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="EnOuLicOESKvqk78to-r" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-26T08:25:37.705Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="G37iYQro2zWCets1Ga26" version="22.1.11" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="412" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1265" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -282,7 +282,7 @@
           <mxGeometry x="20" y="70" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="BGa22VN7DxFNFI6zs9aG-1" value="train.py 中的变量" style="swimlane;strokeWidth=5;startSize=60;fontSize=30;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="790" y="230" width="780" height="1380" as="geometry">
+          <mxGeometry x="780" y="10" width="780" height="1380" as="geometry">
             <mxRectangle x="780" y="10" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -306,7 +306,7 @@
         <mxCell id="BGa22VN7DxFNFI6zs9aG-18" value="sys.path 4 : &quot;~/graspnet-baseline/dataset&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-13">
           <mxGeometry x="10" y="158.75" width="270" height="18.75" as="geometry" />
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-19" value="Path" style="swimlane;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=4;fontFamily=Times New Roman;fontSize=15;startSize=29;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-19" value="cfgs" style="swimlane;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=4;fontFamily=Times New Roman;fontSize=15;startSize=29;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
           <mxGeometry x="10" y="281.25" width="290" height="468.75" as="geometry">
             <mxRectangle x="10" y="71.25" width="70" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -352,6 +352,18 @@
         </mxCell>
         <mxCell id="BGa22VN7DxFNFI6zs9aG-30" value="cfgs.num_point : 20000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
           <mxGeometry x="10" y="398.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-34" value="LR_DECAY_RATES = [ 0.1, 0.1 , 0.1] (type: List)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
+          <mxGeometry x="310" y="560" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="BGa22VN7DxFNFI6zs9aG-1" source="BGa22VN7DxFNFI6zs9aG-27" target="BGa22VN7DxFNFI6zs9aG-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-36" value="LR_DECAY_STEPS = [ 8, 12 , 16] (type: List)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
+          <mxGeometry x="310" y="590" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="BGa22VN7DxFNFI6zs9aG-1" source="BGa22VN7DxFNFI6zs9aG-28" target="BGa22VN7DxFNFI6zs9aG-36">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
