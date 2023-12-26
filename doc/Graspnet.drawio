@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-26T08:12:50.179Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="0Q9cpVQII5sI-Ni4H7HX" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-26T08:19:06.982Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="EnOuLicOESKvqk78to-r" version="22.1.11" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="752" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="412" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -282,7 +282,7 @@
           <mxGeometry x="20" y="70" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="BGa22VN7DxFNFI6zs9aG-1" value="train.py 中的变量" style="swimlane;strokeWidth=5;startSize=60;fontSize=30;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="800" y="10" width="780" height="1380" as="geometry">
+          <mxGeometry x="790" y="230" width="780" height="1380" as="geometry">
             <mxRectangle x="780" y="10" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -307,7 +307,7 @@
           <mxGeometry x="10" y="158.75" width="270" height="18.75" as="geometry" />
         </mxCell>
         <mxCell id="BGa22VN7DxFNFI6zs9aG-19" value="Path" style="swimlane;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=4;fontFamily=Times New Roman;fontSize=15;startSize=29;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
-          <mxGeometry x="10" y="281.25" width="290" height="348.75" as="geometry">
+          <mxGeometry x="10" y="281.25" width="290" height="468.75" as="geometry">
             <mxRectangle x="10" y="71.25" width="70" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -323,23 +323,35 @@
         <mxCell id="BGa22VN7DxFNFI6zs9aG-23" value="cfgs.camera : &quot;realsense&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
           <mxGeometry x="10" y="128.75" width="270" height="18.75" as="geometry" />
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-24" value="cfgs.checkpoint_path : &quot;~/GraspNetDataset&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-24" value="cfgs.checkpoint_path:&quot;logs/logs_rs/checkpoint.tar&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
           <mxGeometry x="10" y="158.75" width="270" height="18.75" as="geometry" />
         </mxCell>
         <mxCell id="BGa22VN7DxFNFI6zs9aG-25" value="cfgs.learning_rate : 0.001" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
-          <mxGeometry x="10" y="188.75" width="270" height="18.75" as="geometry" />
-        </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-26" value="cfgs.log_dir : &quot;logs/logs_rs&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
           <mxGeometry x="10" y="218.75" width="270" height="18.75" as="geometry" />
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-27" value="cfgs.lr_decay_rates : &quot;0.1, 0.1, 0.1&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-26" value="cfgs.log_dir : &quot;logs/logs_rs&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
           <mxGeometry x="10" y="248.75" width="270" height="18.75" as="geometry" />
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-28" value="cfgs.lr_decay_steps : &quot;8, 12 ,16&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-27" value="cfgs.lr_decay_rates : &quot;0.1, 0.1, 0.1&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
           <mxGeometry x="10" y="278.75" width="270" height="18.75" as="geometry" />
         </mxCell>
-        <mxCell id="BGa22VN7DxFNFI6zs9aG-29" value="cfgs.max_epoch : 18" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-28" value="cfgs.lr_decay_steps : &quot;8, 12 ,16&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
           <mxGeometry x="10" y="308.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-29" value="cfgs.max_epoch : 18" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="338.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-31" value="cfgs.num_view : 300&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="368.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-32" value="cfgs.dataset_root : &quot;~/GraspNetDataset&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="188.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-33" value="cfgs.weight_decay : 0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="428.75" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="BGa22VN7DxFNFI6zs9aG-30" value="cfgs.num_point : 20000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-19">
+          <mxGeometry x="10" y="398.75" width="270" height="18.75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
