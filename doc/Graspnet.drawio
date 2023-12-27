@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T08:33:15.257Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="rzsgPmXem9pNsabq8Hit" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T08:35:17.981Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="oW_6WDUVasBSuKZdQ67_" version="22.1.11" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="1071" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="752" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -907,6 +907,24 @@
         </mxCell>
         <mxCell id="mYBhXaQMHchQe6GeIor5-271" value="self.colorpath = [ ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;strokeWidth=2;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-43">
           <mxGeometry x="10" y="330.62" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mYBhXaQMHchQe6GeIor5-352" value="self.depthpath = [ ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;strokeWidth=2;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-43">
+          <mxGeometry x="10" y="360.62" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mYBhXaQMHchQe6GeIor5-353" value="self.labelpath = [ ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;strokeWidth=2;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-43">
+          <mxGeometry x="10" y="390.62" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mYBhXaQMHchQe6GeIor5-354" value="self.metapath = [ ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;strokeWidth=2;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-43">
+          <mxGeometry x="10" y="420.62" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mYBhXaQMHchQe6GeIor5-355" value="self.scenename = [ ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;strokeWidth=2;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-43">
+          <mxGeometry x="10" y="450.62" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mYBhXaQMHchQe6GeIor5-356" value="self.frameid = [ ]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;strokeWidth=2;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-43">
+          <mxGeometry x="10" y="480.62" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mYBhXaQMHchQe6GeIor5-357" value="self.collision_labels = { }" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;strokeWidth=2;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-43">
+          <mxGeometry x="10" y="510.62" width="190" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
