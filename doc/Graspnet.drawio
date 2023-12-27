@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T05:18:39.665Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="pDaAC4LDIxsciLnAeGyt" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T05:24:40.277Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="KIUr__gUI9-YdUIHbGS-" version="22.1.11" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="1114" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1856" dy="1048" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -274,7 +274,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sX4coS9XEuwfjpgeVb6J-23" value="data_utils.py" style="swimlane;strokeWidth=5;startSize=60;fontSize=30;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="2090" y="10" width="780" height="1380" as="geometry">
+          <mxGeometry x="1580" y="10" width="780" height="1380" as="geometry">
             <mxRectangle x="780" y="10" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -396,7 +396,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BGa22VN7DxFNFI6zs9aG-40" value="graspnet_dataset.py" style="swimlane;strokeWidth=5;startSize=60;fontSize=30;fontFamily=Times New Roman;" parent="1" vertex="1">
-          <mxGeometry x="2980" y="10" width="1680" height="1380" as="geometry">
+          <mxGeometry x="2380" y="10" width="2280" height="1380" as="geometry">
             <mxRectangle x="780" y="10" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -609,6 +609,9 @@
         </mxCell>
         <mxCell id="mYBhXaQMHchQe6GeIor5-19" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;container=0;strokeWidth=2;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-42">
           <mxGeometry x="360" y="400.63" width="20" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mYBhXaQMHchQe6GeIor5-42" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 15px;&quot;&gt;Class: GraspNetDataset&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#fff2cc;strokeColor=#d6b656;startSize=29;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-40">
+          <mxGeometry x="10" y="71.25" width="1650" height="648.75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
