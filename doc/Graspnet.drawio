@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T05:24:40.277Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="KIUr__gUI9-YdUIHbGS-" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T05:33:05.867Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="kjZX3uuf-cBWgbvgQIpN" version="22.1.11" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="1856" dy="1048" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1160" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -610,8 +610,11 @@
         <mxCell id="mYBhXaQMHchQe6GeIor5-19" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;container=0;strokeWidth=2;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-42">
           <mxGeometry x="360" y="400.63" width="20" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="mYBhXaQMHchQe6GeIor5-42" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 15px;&quot;&gt;Class: GraspNetDataset&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#fff2cc;strokeColor=#d6b656;startSize=29;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-40">
+        <mxCell id="mYBhXaQMHchQe6GeIor5-42" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 15px;&quot;&gt;Class: GraspNetDataset(Dataset)&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#fff2cc;strokeColor=#d6b656;startSize=29;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-40">
           <mxGeometry x="10" y="71.25" width="1650" height="648.75" as="geometry" />
+        </mxCell>
+        <mxCell id="mYBhXaQMHchQe6GeIor5-43" value="&lt;font face=&quot;Times New Roman&quot;&gt;__init__&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;strokeWidth=3;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-42">
+          <mxGeometry x="10" y="38.13" width="670" height="601.87" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
