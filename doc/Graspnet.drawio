@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T08:41:30.213Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="bPqnh-8C4VEHMbTbRWut" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T08:43:20.062Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="dH5dubvnhQSuLivUMduy" version="22.1.11" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="1989" dy="1071" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1638" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -617,7 +617,7 @@
         <mxCell id="mYBhXaQMHchQe6GeIor5-42" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 15px;&quot;&gt;Class: GraspNetDataset(Dataset)&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;strokeWidth=4;fillColor=#fff2cc;strokeColor=#d6b656;startSize=29;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-40">
           <mxGeometry x="10" y="71.25" width="990" height="1288.75" as="geometry" />
         </mxCell>
-        <mxCell id="mYBhXaQMHchQe6GeIor5-43" value="&lt;font face=&quot;Times New Roman&quot;&gt;__init__&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;strokeWidth=3;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-42">
+        <mxCell id="mYBhXaQMHchQe6GeIor5-43" value="&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;__init__(self, root, valid_obj_idxs, grasp_labels, camera=&quot;kinect&quot;,&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; background-color: initial;&quot;&gt;split=&quot;train&quot;, num_points=20000, remove_outlier=False,&amp;nbsp;&lt;/span&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;remove_invisible=True, augment=False, load_label=True,&lt;/span&gt;)&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;strokeWidth=3;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-42">
           <mxGeometry x="10" y="38.13" width="960" height="1231.87" as="geometry" />
         </mxCell>
         <mxCell id="mYBhXaQMHchQe6GeIor5-44" value="self.root = &#39;~/GraspNetDataset&#39;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;strokeWidth=2;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-43">
