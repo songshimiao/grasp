@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T08:43:20.062Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="dH5dubvnhQSuLivUMduy" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T08:58:29.974Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="5q6-eJBTsy2fwLtCsBQR" version="22.1.11" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="1638" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="928" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -393,7 +393,12 @@
           <mxGeometry x="400" y="190" width="270" height="18.75" as="geometry" />
         </mxCell>
         <mxCell id="mYBhXaQMHchQe6GeIor5-41" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="BGa22VN7DxFNFI6zs9aG-1" source="BGa22VN7DxFNFI6zs9aG-26" target="mYBhXaQMHchQe6GeIor5-40">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="539" />
+              <mxPoint x="340" y="199" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="BGa22VN7DxFNFI6zs9aG-40" value="graspnet_dataset.py" style="swimlane;strokeWidth=5;startSize=60;fontSize=30;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="2380" y="10" width="2280" height="1380" as="geometry">
@@ -618,7 +623,7 @@
           <mxGeometry x="10" y="71.25" width="990" height="1288.75" as="geometry" />
         </mxCell>
         <mxCell id="mYBhXaQMHchQe6GeIor5-43" value="&lt;font face=&quot;Times New Roman&quot;&gt;&amp;nbsp;__init__(self, root, valid_obj_idxs, grasp_labels, camera=&quot;kinect&quot;,&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; background-color: initial;&quot;&gt;split=&quot;train&quot;, num_points=20000, remove_outlier=False,&amp;nbsp;&lt;/span&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;remove_invisible=True, augment=False, load_label=True,&lt;/span&gt;)&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;strokeWidth=3;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-42">
-          <mxGeometry x="10" y="38.13" width="960" height="1231.87" as="geometry" />
+          <mxGeometry x="10" y="38.13" width="960" height="1021.87" as="geometry" />
         </mxCell>
         <mxCell id="mYBhXaQMHchQe6GeIor5-44" value="self.root = &#39;~/GraspNetDataset&#39;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;strokeWidth=2;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-43">
           <mxGeometry x="10" y="31.25" width="190" height="20" as="geometry" />
