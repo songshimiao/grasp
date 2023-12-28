@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-28T05:31:29.463Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Lwlk1trEe9JreaQyLt2s" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T05:34:11.741Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="8yIsMjg9eDPCZuf7_LQ9" version="22.1.15" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="1989" dy="1071" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
+    <mxGraphModel dx="795" dy="429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1247,6 +1247,18 @@
         </mxCell>
         <mxCell id="RYuhu5XKA8OSqtuDk9EQ-36" value="沿YZ平面翻转" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" vertex="1" parent="RYuhu5XKA8OSqtuDk9EQ-67">
           <mxGeometry x="300" y="33.25" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-69" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="RYuhu5XKA8OSqtuDk9EQ-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="1090.62" as="sourcePoint" />
+            <mxPoint x="235" y="1090.62" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-70" value="point_clouds" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="RYuhu5XKA8OSqtuDk9EQ-19">
+          <mxGeometry x="110" y="1050.62" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-113" value="object_poses_list" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="RYuhu5XKA8OSqtuDk9EQ-19">
+          <mxGeometry x="110" y="1090.62" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
