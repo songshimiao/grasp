@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-28T02:52:43.740Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Mbi1oy7hIbonj84R3KkP" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T04:23:41.635Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="W-Swc2w-b3Ysx9ZOX1Sj" version="22.1.15" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="960" dy="517" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1740" dy="938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1102,8 +1102,8 @@
             <mxPoint x="160" y="99.67000000000009" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-19" value="augment_data(self, point_clouds, object_poses_list)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-42">
-          <mxGeometry x="1010" y="48.75" width="960" height="721.25" as="geometry" />
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-19" value="augment_data(self, point_clouds, object_poses_list) 扩充数据" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" vertex="1" parent="mYBhXaQMHchQe6GeIor5-42">
+          <mxGeometry x="980" y="38.13" width="960" height="721.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
