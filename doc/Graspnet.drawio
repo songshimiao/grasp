@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-28T06:09:43.818Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="jtT68AJABtbUmJlfVUMy" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T07:43:44.388Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="fNOW7xnAEJPsCUQ-N5IS" version="22.1.15" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="773" dy="417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
+    <mxGraphModel dx="1210" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -558,6 +558,15 @@
         </mxCell>
         <mxCell id="RYuhu5XKA8OSqtuDk9EQ-140" value="len(TEST_DATASET) = 7680" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
           <mxGeometry x="400" y="230" width="270" height="18.75" as="geometry" />
+        </mxCell>
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-141" value="TRAIN_DATALOADER:&lt;br&gt;batchsize = 1, shuffle = True, num_workers = 4,&lt;br&gt;worker_init_fn = &lt;font color=&quot;#0000ff&quot;&gt;my_worker_init_fn&lt;/font&gt;,&lt;br&gt;&lt;font color=&quot;#0000ff&quot;&gt;collate_fn = collate_fn&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
+          <mxGeometry x="400" y="270" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-142" value="TEST_DATALOADER:&lt;br&gt;batchsize = 1, shuffle = False, num_workers = 4,&lt;br&gt;worker_init_fn = &lt;font color=&quot;#0000ff&quot;&gt;my_worker_init_fn&lt;/font&gt;,&lt;br&gt;&lt;font color=&quot;#0000ff&quot;&gt;collate_fn = collate_fn&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
+          <mxGeometry x="400" y="360" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-149" value="&lt;h1&gt;worker_init_fn&lt;/h1&gt;&lt;p&gt;如果不是 None，则在播种之后和数据加载之前，将在每个工作子进程上调用此方法，并以工作 ID（[0, num_workers - 1] 中的 int）作为输入。&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="BGa22VN7DxFNFI6zs9aG-1">
+          <mxGeometry x="540" y="460" width="230" height="120" as="geometry" />
         </mxCell>
         <mxCell id="BGa22VN7DxFNFI6zs9aG-40" value="graspnet_dataset.py" style="swimlane;strokeWidth=5;startSize=60;fontSize=30;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="1580" y="10" width="3080" height="1380" as="geometry">
@@ -1340,6 +1349,21 @@
         </mxCell>
         <mxCell id="RYuhu5XKA8OSqtuDk9EQ-113" value="object_poses_list" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="RYuhu5XKA8OSqtuDk9EQ-19">
           <mxGeometry x="110" y="1090.62" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-144" value="&lt;h1&gt;collate_fn&lt;/h1&gt;&lt;p&gt;合并样本列表以形成张量的小批量。从地图样式数据集批量加载时使用。&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="470" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-147" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="RYuhu5XKA8OSqtuDk9EQ-144" target="RYuhu5XKA8OSqtuDk9EQ-141">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1130" y="460" as="sourcePoint" />
+            <mxPoint x="1290" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RYuhu5XKA8OSqtuDk9EQ-148" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="RYuhu5XKA8OSqtuDk9EQ-144" target="RYuhu5XKA8OSqtuDk9EQ-142">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1160" y="450" as="sourcePoint" />
+            <mxPoint x="1220" y="340" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
