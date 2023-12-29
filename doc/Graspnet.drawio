@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-29T08:41:00.543Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="-gSqlwo8akMf1ZeQf2_m" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-29T08:47:17.911Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="uUOqVpuYkh9tomgxCvUP" version="22.1.15" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="795" dy="429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
+    <mxGraphModel dx="1210" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1404,8 +1404,17 @@
         <mxCell id="8VVmBRmLj0RCd31MQ1u0-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="8VVmBRmLj0RCd31MQ1u0-10" source="8VVmBRmLj0RCd31MQ1u0-5" target="8VVmBRmLj0RCd31MQ1u0-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8VVmBRmLj0RCd31MQ1u0-13" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;backbone=Pointnet2Backbone(&lt;br&gt;input_feature_dim=0)&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1140" y="1590" width="290" height="100" as="geometry" />
+        <mxCell id="8VVmBRmLj0RCd31MQ1u0-16" value="&lt;font style=&quot;font-size: 20px;&quot; face=&quot;Times New Roman&quot;&gt;view_estimator&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#000000;strokeWidth=3;startSize=35;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="1545" width="560" height="375" as="geometry" />
+        </mxCell>
+        <mxCell id="8VVmBRmLj0RCd31MQ1u0-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="8VVmBRmLj0RCd31MQ1u0-16" source="8VVmBRmLj0RCd31MQ1u0-13" target="8VVmBRmLj0RCd31MQ1u0-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8VVmBRmLj0RCd31MQ1u0-14" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;vpmodule=ApproachNet(&lt;br&gt;num_view=300,&lt;br&gt;256)&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="8VVmBRmLj0RCd31MQ1u0-16">
+          <mxGeometry x="133.25" y="217.5" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8VVmBRmLj0RCd31MQ1u0-13" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;backbone=Pointnet2Backbone(&lt;br&gt;input_feature_dim=0)&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="8VVmBRmLj0RCd31MQ1u0-16">
+          <mxGeometry x="133.25" y="80" width="290" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
