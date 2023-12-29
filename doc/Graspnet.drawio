@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-29T06:14:46.633Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="KshFVBO3cK8n4JD6bgZu" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-29T06:37:46.315Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="_sBWck0X-Hed3ZFBSUmO" version="22.1.15" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="3093" dy="1667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
+    <mxGraphModel dx="1638" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1368,7 +1368,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8VVmBRmLj0RCd31MQ1u0-1" value="net = GraspNet(&lt;br style=&quot;font-size: 20px;&quot;&gt;input_feature_dim=0,&lt;br&gt;num_view=300,&lt;br&gt;num_angle=12,&lt;br&gt;num_depth=4,&lt;br&gt;cylinder_radius=0.05,&lt;br&gt;hmin=-0.02,&lt;br&gt;hmax_list=[0.01,0.02,0.03,0.04])" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="850" y="2020" width="320" height="210" as="geometry" />
+          <mxGeometry x="10" y="2190" width="320" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="8VVmBRmLj0RCd31MQ1u0-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1920" width="330" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
