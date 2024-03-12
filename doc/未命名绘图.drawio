@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-12T06:38:04.391Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="HarRndQ96a71mlgnRWNM" version="24.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-12T06:53:47.247Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="FH1xLZvNqb9DW-giuvVJ" version="24.0.5" type="github">
   <diagram name="第 1 页" id="c18BtxupdOjtGE5lwTED">
     <mxGraphModel dx="683" dy="376" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -34,7 +34,7 @@
         <mxCell id="OIU73lLJAFTmNbv0Lwg5-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startSize=1;endSize=1;" edge="1" parent="OIU73lLJAFTmNbv0Lwg5-47" source="OIU73lLJAFTmNbv0Lwg5-5" target="OIU73lLJAFTmNbv0Lwg5-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OIU73lLJAFTmNbv0Lwg5-5" value="&lt;p style=&quot;line-height: 0%; font-size: 15px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;$$3\times3$$ DWConv&lt;/font&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#330000;align=center;spacing=2;container=0;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-47">
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-5" value="&lt;p style=&quot;line-height: 0%; font-size: 15px;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;$$3\times3$$ DWConv&lt;/font&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#330000;align=center;spacing=2;container=0;verticalAlign=middle;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-47">
           <mxGeometry x="3.4599999999999937" y="110" width="95.62" height="40" as="geometry" />
         </mxCell>
         <mxCell id="OIU73lLJAFTmNbv0Lwg5-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=1;" edge="1" parent="OIU73lLJAFTmNbv0Lwg5-47" source="OIU73lLJAFTmNbv0Lwg5-6" target="OIU73lLJAFTmNbv0Lwg5-11">
@@ -150,6 +150,75 @@
         </mxCell>
         <mxCell id="OIU73lLJAFTmNbv0Lwg5-48" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 15px;&quot;&gt;视频帧&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#330000;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-52">
           <mxGeometry y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=1;" edge="1" parent="1" source="OIU73lLJAFTmNbv0Lwg5-53" target="OIU73lLJAFTmNbv0Lwg5-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-53" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Times New Roman&quot;&gt;$$3\times3$$ Conv stride 2&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#330000;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="180" y="583.75" width="100" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endSize=1;" edge="1" parent="1" source="OIU73lLJAFTmNbv0Lwg5-50" target="OIU73lLJAFTmNbv0Lwg5-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-75" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=1;curved=0;" edge="1" parent="1" source="OIU73lLJAFTmNbv0Lwg5-57" target="OIU73lLJAFTmNbv0Lwg5-60">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="615" />
+              <mxPoint x="420" y="540" />
+              <mxPoint x="505" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-57" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Times New Roman&quot;&gt;$$3\times3$$ MaxPool stride 2&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#330000;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="303.5" y="583.75" width="110" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-63" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="440" y="560" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-59" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;dashed=1;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-63">
+          <mxGeometry width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=1;" edge="1" parent="OIU73lLJAFTmNbv0Lwg5-63" source="OIU73lLJAFTmNbv0Lwg5-60" target="OIU73lLJAFTmNbv0Lwg5-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-60" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 15px;&quot;&gt;还原单元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-63">
+          <mxGeometry x="30" y="10" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-61" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 15px;&quot;&gt;常规单元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-63">
+          <mxGeometry x="30" y="53.75" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-62" value="$$\times3$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-63">
+          <mxGeometry x="100" y="58.75" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-64" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="600" y="560" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-65" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;dashed=1;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-64">
+          <mxGeometry width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-66" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 15px;&quot;&gt;还原单元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-64">
+          <mxGeometry x="30" y="10" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-67" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 15px;&quot;&gt;常规单元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-64">
+          <mxGeometry x="30" y="53.75" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-68" value="$$\times7$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-64">
+          <mxGeometry x="100" y="58.75" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-69" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="760" y="560" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-70" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;dashed=1;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-69">
+          <mxGeometry width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-71" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 15px;&quot;&gt;还原单元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-69">
+          <mxGeometry x="30" y="10" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-72" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 15px;&quot;&gt;常规单元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-69">
+          <mxGeometry x="30" y="53.75" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-73" value="$$\times3$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OIU73lLJAFTmNbv0Lwg5-69">
+          <mxGeometry x="100" y="58.75" width="20" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
