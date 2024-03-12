@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-12T05:40:05.225Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="yyaurSRTlWEzRxjY2KvG" version="24.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-12T05:46:21.827Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="vNvNST2YdKmIBhc-YvhJ" version="24.0.5" type="github">
   <diagram name="第 1 页" id="c18BtxupdOjtGE5lwTED">
-    <mxGraphModel dx="478" dy="263" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="478" dy="263" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,8 +10,8 @@
         <mxCell id="OIU73lLJAFTmNbv0Lwg5-2" value="&lt;p&gt;&lt;font style=&quot;font-size: 15px;&quot; face=&quot;宋体&quot;&gt;通道切分&lt;/font&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="137.5" y="110" width="75" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="OIU73lLJAFTmNbv0Lwg5-4" value="&lt;p&gt;&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;卷积&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#330000;" vertex="1" parent="1">
-          <mxGeometry x="137.5" y="140" width="75" height="20" as="geometry" />
+        <mxCell id="OIU73lLJAFTmNbv0Lwg5-4" value="&lt;p style=&quot;line-height: 100%;&quot;&gt;$$1\times1$$&amp;nbsp;&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;卷积&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#330000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="144.38" y="140" width="61.25" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
