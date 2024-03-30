@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-30T05:08:47.101Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="iUDgBFDFezIH7SgD0yVb" version="24.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-30T05:20:39.669Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="fkBp7iGXt_H4pqVmhnTW" version="24.2.1" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="5736" dy="3160" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
+    <mxGraphModel dx="1062" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1510,7 +1510,7 @@
           <mxGeometry x="5560" y="980" width="1051.28" height="410" as="geometry" />
         </mxCell>
         <mxCell id="n_4w54b3VBjCQwH6Wo2H-7" value="抓握姿势表征" style="swimlane;whiteSpace=wrap;html=1;strokeWidth=3;startSize=33;" vertex="1" parent="1">
-          <mxGeometry x="8184.77" y="526.65" width="495.23" height="453.35" as="geometry" />
+          <mxGeometry x="8184.77" y="526.65" width="785.23" height="453.35" as="geometry" />
         </mxCell>
         <mxCell id="n_4w54b3VBjCQwH6Wo2H-8" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Times New Roman&quot;&gt;$$\mathbf{G}=[\mathbf{R}\ \mathbf{t}\ w]$$&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
           <mxGeometry x="15.23" y="50.1" width="94.77" height="59.9" as="geometry" />
@@ -1518,20 +1518,35 @@
         <mxCell id="n_4w54b3VBjCQwH6Wo2H-10" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Times New Roman&quot;&gt;$$\mathbf{R}\in \mathbb{R}^{3\times 3}$$&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
           <mxGeometry x="15.23" y="115.98" width="84.77" height="59.9" as="geometry" />
         </mxCell>
-        <mxCell id="n_4w54b3VBjCQwH6Wo2H-13" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;夹爪位姿（朝向及旋转）&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
+        <mxCell id="n_4w54b3VBjCQwH6Wo2H-13" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;夹爪位姿（朝向及旋转）&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
           <mxGeometry x="110" y="115.98" width="180" height="59.9" as="geometry" />
         </mxCell>
         <mxCell id="n_4w54b3VBjCQwH6Wo2H-14" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Times New Roman&quot;&gt;$$\mathbf{t}\in \mathbb{R}^{3\times 1}$$&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
           <mxGeometry x="15.23" y="175.88" width="84.77" height="59.9" as="geometry" />
         </mxCell>
-        <mxCell id="n_4w54b3VBjCQwH6Wo2H-15" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;抓取中心&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
+        <mxCell id="n_4w54b3VBjCQwH6Wo2H-15" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;抓取中心&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
           <mxGeometry x="110" y="175.88" width="180" height="59.9" as="geometry" />
         </mxCell>
         <mxCell id="n_4w54b3VBjCQwH6Wo2H-16" value="&lt;font style=&quot;font-size: 15px;&quot; face=&quot;Times New Roman&quot;&gt;$$w\in \mathbb{R}$$&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
           <mxGeometry x="15.229999999999563" y="235.77999999999997" width="84.77" height="59.9" as="geometry" />
         </mxCell>
-        <mxCell id="n_4w54b3VBjCQwH6Wo2H-17" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;抓取目标物体的夹爪宽度&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
+        <mxCell id="n_4w54b3VBjCQwH6Wo2H-17" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;抓取目标物体的夹爪宽度&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
           <mxGeometry x="110" y="235.77999999999997" width="180" height="59.9" as="geometry" />
+        </mxCell>
+        <mxCell id="n_4w54b3VBjCQwH6Wo2H-18" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 15px;&quot;&gt;obj：对象点。&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
+          <mxGeometry x="345.23" y="50.1" width="134.77" height="49.9" as="geometry" />
+        </mxCell>
+        <mxCell id="n_4w54b3VBjCQwH6Wo2H-19" value="&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;$$\mathbf{V}$$&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
+          <mxGeometry x="345.23" y="110" width="24.77" height="49.9" as="geometry" />
+        </mxCell>
+        <mxCell id="n_4w54b3VBjCQwH6Wo2H-20" value="&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;：逼近向量&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
+          <mxGeometry x="370" y="110" width="134.77" height="49.9" as="geometry" />
+        </mxCell>
+        <mxCell id="n_4w54b3VBjCQwH6Wo2H-21" value="&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;$$D$$&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
+          <mxGeometry x="345.22999999999956" y="175.88" width="24.77" height="49.9" as="geometry" />
+        </mxCell>
+        <mxCell id="n_4w54b3VBjCQwH6Wo2H-22" value="&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;：对象点到夹爪框架原点的接近距离&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n_4w54b3VBjCQwH6Wo2H-7">
+          <mxGeometry x="370" y="175.88" width="290" height="49.9" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
