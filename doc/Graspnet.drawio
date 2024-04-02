@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-02T08:20:36.585Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="clRd34YJxj77acmdQbdX" version="24.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-02T08:23:35.324Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="iaSWYakpRlA-G-ZF8tJ5" version="24.2.1" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
     <mxGraphModel dx="1114" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
       <root>
@@ -1423,6 +1423,40 @@
           <mxGeometry x="185" y="37.86000000000001" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XZKY8aXxDUDI6J8KYp7W-18" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;25600张对应的深度图像&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XZKY8aXxDUDI6J8KYp7W-11">
+          <mxGeometry x="260" y="37.86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XZKY8aXxDUDI6J8KYp7W-19" value="" style="group" vertex="1" connectable="0" parent="zM_qtzynbv80DcIuchPP-1">
+          <mxGeometry x="10" y="310.62" width="720" height="105.72" as="geometry" />
+        </mxCell>
+        <mxCell id="XZKY8aXxDUDI6J8KYp7W-20" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Sauce Code Pro Nerd Font Regular&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; white-space: pre;&quot;&gt;GraspNetDataset/scenes/scene_0000/realsense/depth/0000.png&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="XZKY8aXxDUDI6J8KYp7W-19">
+          <mxGeometry y="6.789999999999999" width="430" height="23.57" as="geometry" />
+        </mxCell>
+        <mxCell id="XZKY8aXxDUDI6J8KYp7W-21" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Sauce Code Pro Nerd Font Regular&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; white-space: pre;&quot;&gt;GraspNetDataset/scenes/scene_0099/realsense/depth/0255.png&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="XZKY8aXxDUDI6J8KYp7W-19">
+          <mxGeometry y="77.86000000000001" width="430" height="23.57" as="geometry" />
+        </mxCell>
+        <mxCell id="XZKY8aXxDUDI6J8KYp7W-22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;curved=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="XZKY8aXxDUDI6J8KYp7W-19" source="XZKY8aXxDUDI6J8KYp7W-24" target="XZKY8aXxDUDI6J8KYp7W-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="53.24" />
+              <mxPoint x="450" y="18.240000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XZKY8aXxDUDI6J8KYp7W-23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;curved=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="XZKY8aXxDUDI6J8KYp7W-19" source="XZKY8aXxDUDI6J8KYp7W-24" target="XZKY8aXxDUDI6J8KYp7W-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="53.24" />
+              <mxPoint x="450" y="89.24000000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XZKY8aXxDUDI6J8KYp7W-24" value="&lt;font face=&quot;Sauce Code Pro Nerd Font Regular, Consolas, Courier New, monospace, Droid Sans Mono, monospace, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;depth&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Sauce Code Pro Nerd Font Regular&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; white-space: pre; font-size: 14px;&quot;&gt;格式为np.array&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Sauce Code Pro Nerd Font Regular&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, monospace, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; white-space: pre; font-size: 14px;&quot;&gt;dtype=int32&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Sauce Code Pro Nerd Font Regular, Consolas, Courier New, monospace, Droid Sans Mono, monospace, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;25600个(720x1280)的np.array&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="XZKY8aXxDUDI6J8KYp7W-19">
+          <mxGeometry x="460" width="260" height="105.72" as="geometry" />
+        </mxCell>
+        <mxCell id="XZKY8aXxDUDI6J8KYp7W-25" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;$$\vdots$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XZKY8aXxDUDI6J8KYp7W-19">
+          <mxGeometry x="185" y="37.86000000000001" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XZKY8aXxDUDI6J8KYp7W-26" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;25600张对应的深度图像&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XZKY8aXxDUDI6J8KYp7W-19">
           <mxGeometry x="260" y="37.86" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="RYuhu5XKA8OSqtuDk9EQ-144" value="&lt;h1&gt;collate_fn&lt;/h1&gt;&lt;p&gt;合并样本列表以形成张量的小批量。从地图样式数据集批量加载时使用。&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
