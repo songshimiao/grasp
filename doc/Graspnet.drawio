@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-10T02:30:03.990Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="S3eLioeAjT0n-NyVaO8S" version="24.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-10T02:45:01.343Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="DrDUeA4xHrDNNorsMsvl" version="24.2.2" type="github">
   <diagram name="第 1 页" id="CiREt7vdbcbse35liX8I">
-    <mxGraphModel dx="1160" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
+    <mxGraphModel dx="1638" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1505,8 +1505,19 @@
         <mxCell id="XZKY8aXxDUDI6J8KYp7W-40" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;25600张图像中物体的6D位姿标注&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XZKY8aXxDUDI6J8KYp7W-33" vertex="1">
           <mxGeometry x="240" y="37.86" width="190" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="_Nthy-nbcZMPqylAofdV-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;endSize=3;" edge="1" parent="zM_qtzynbv80DcIuchPP-1" source="_Nthy-nbcZMPqylAofdV-1" target="_Nthy-nbcZMPqylAofdV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="_Nthy-nbcZMPqylAofdV-1" value="&lt;font face=&quot;Sauce Code Pro Nerd Font Regular, Consolas, Courier New, monospace, Droid Sans Mono, monospace, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;$$intrinsic=\begin{bmatrix}f_x &amp;amp; 0 &amp;amp; c_x \\ 0 &amp;amp; f_y &amp;amp; c_y \\ 0 &amp;amp; 0 &amp;amp; 1\end{bmatrix}$$&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=center;" vertex="1" parent="zM_qtzynbv80DcIuchPP-1">
           <mxGeometry x="960" y="440.62" width="195" height="79.38" as="geometry" />
+        </mxCell>
+        <mxCell id="_Nthy-nbcZMPqylAofdV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;curved=0;strokeWidth=2;" edge="1" parent="zM_qtzynbv80DcIuchPP-1" source="_Nthy-nbcZMPqylAofdV-2" target="_Nthy-nbcZMPqylAofdV-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="555" />
+              <mxPoint x="1170" y="480" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="_Nthy-nbcZMPqylAofdV-2" value="&lt;font face=&quot;Sauce Code Pro Nerd Font Regular, Consolas, Courier New, monospace, Droid Sans Mono, monospace, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;factor_depth&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=center;" vertex="1" parent="zM_qtzynbv80DcIuchPP-1">
           <mxGeometry x="960" y="540.62" width="195" height="29.38" as="geometry" />
@@ -1515,6 +1526,18 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_Nthy-nbcZMPqylAofdV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;curved=0;fillColor=#fff2cc;strokeColor=#d6b656;endSize=3;strokeWidth=2;" edge="1" parent="zM_qtzynbv80DcIuchPP-1" source="XZKY8aXxDUDI6J8KYp7W-38" target="_Nthy-nbcZMPqylAofdV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Nthy-nbcZMPqylAofdV-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=3;" edge="1" parent="zM_qtzynbv80DcIuchPP-1" source="_Nthy-nbcZMPqylAofdV-5" target="_Nthy-nbcZMPqylAofdV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Nthy-nbcZMPqylAofdV-5" value="&lt;font face=&quot;Sauce Code Pro Nerd Font Regular, Consolas, Courier New, monospace, Droid Sans Mono, monospace, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;camera=CameraInfo(&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Sauce Code Pro Nerd Font Regular, Consolas, Courier New, monospace, Droid Sans Mono, monospace, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;width=1280,&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Sauce Code Pro Nerd Font Regular, Consolas, Courier New, monospace, Droid Sans Mono, monospace, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;height=720,&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Sauce Code Pro Nerd Font Regular, Consolas, Courier New, monospace, Droid Sans Mono, monospace, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;fx,fy,cx,cy,&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Sauce Code Pro Nerd Font Regular, Consolas, Courier New, monospace, Droid Sans Mono, monospace, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;scale=factor_depth)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=center;" vertex="1" parent="zM_qtzynbv80DcIuchPP-1">
+          <mxGeometry x="1190" y="440.62" width="195" height="79.38" as="geometry" />
+        </mxCell>
+        <mxCell id="_Nthy-nbcZMPqylAofdV-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;font color=&quot;#3333ff&quot;&gt;create_point_cloud_from_depth_image&lt;/font&gt;(&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;depth, camera, organized=True)&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="zM_qtzynbv80DcIuchPP-1">
+          <mxGeometry x="1142.5" y="203.48000000000002" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_Nthy-nbcZMPqylAofdV-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;" edge="1" parent="zM_qtzynbv80DcIuchPP-1" source="XZKY8aXxDUDI6J8KYp7W-16" target="_Nthy-nbcZMPqylAofdV-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RYuhu5XKA8OSqtuDk9EQ-144" value="&lt;h1&gt;collate_fn&lt;/h1&gt;&lt;p&gt;合并样本列表以形成张量的小批量。从地图样式数据集批量加载时使用。&lt;/p&gt;" style="text;html=1;strokeColor=default;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
