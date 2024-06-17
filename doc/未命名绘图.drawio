@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-17T11:07:33.568Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="6H1qhdVwVJbelP--opsK" version="24.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-17T11:14:09.160Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="PC6GS3qds64QYD2yuSUl" version="24.4.4" type="github">
   <diagram name="第 1 页" id="c18BtxupdOjtGE5lwTED">
     <mxGraphModel dx="1195" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -275,14 +275,42 @@
         <mxCell id="jHR6YxAc6EjQOpSINYbP-5" value="非火灾场景&lt;div&gt;测试视频&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;\(j\)&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontFamily=宋体;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="510" y="550" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jHR6YxAc6EjQOpSINYbP-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=2;" edge="1" parent="1" source="jHR6YxAc6EjQOpSINYbP-7" target="jHR6YxAc6EjQOpSINYbP-9">
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=2;" edge="1" parent="1" source="jHR6YxAc6EjQOpSINYbP-7" target="jHR6YxAc6EjQOpSINYbP-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jHR6YxAc6EjQOpSINYbP-7" value="&lt;font face=&quot;Times New Roman&quot;&gt;\(\omega=3\)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="640" y="460" width="70" height="40" as="geometry" />
+          <mxGeometry x="640" y="460" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=2;" edge="1" parent="1" source="jHR6YxAc6EjQOpSINYbP-9" target="jHR6YxAc6EjQOpSINYbP-14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jHR6YxAc6EjQOpSINYbP-9" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: initial;&quot; face=&quot;宋体&quot;&gt;测试&lt;/font&gt;&lt;font style=&quot;background-color: initial;&quot; face=&quot;Times New Roman&quot;&gt;10&lt;/font&gt;&lt;font style=&quot;background-color: initial;&quot; face=&quot;宋体&quot;&gt;次&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;统计&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;平均时间&amp;nbsp;&lt;font face=&quot;Times New Roman&quot;&gt;\(t_i\)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=15;align=center;" vertex="1" parent="1">
-          <mxGeometry x="740" y="450" width="140" height="60" as="geometry" />
+          <mxGeometry x="850" y="450" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-11" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: initial;&quot; face=&quot;宋体&quot;&gt;测试&lt;/font&gt;&lt;font style=&quot;background-color: initial;&quot; face=&quot;Times New Roman&quot;&gt;10&lt;/font&gt;&lt;font style=&quot;background-color: initial;&quot; face=&quot;宋体&quot;&gt;次&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;统计&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;平均时间&amp;nbsp;&lt;font face=&quot;Times New Roman&quot;&gt;\(t_i\)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=15;align=center;" vertex="1" parent="1">
+          <mxGeometry x="827" y="678.12" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=2;" edge="1" parent="1" source="jHR6YxAc6EjQOpSINYbP-12" target="jHR6YxAc6EjQOpSINYbP-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-18" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jHR6YxAc6EjQOpSINYbP-17">
+          <mxGeometry x="-0.0556" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-12" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Times New Roman&quot;&gt;\(\omega&amp;lt;21\)?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="455" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=3;" edge="1" parent="1" source="jHR6YxAc6EjQOpSINYbP-14" target="jHR6YxAc6EjQOpSINYbP-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1015" y="430" />
+              <mxPoint x="770" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-14" value="&lt;font face=&quot;Times New Roman&quot;&gt;\(\omega+2\)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="990" y="460" width="50" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
