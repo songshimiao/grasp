@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-18T02:08:58.722Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="WPNuGeHWufhb_zIS_m5h" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-18T02:14:45.548Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="AMcgulqiOZZx9QxN16Hr" version="24.5.4" type="github">
   <diagram name="第 1 页" id="c18BtxupdOjtGE5lwTED">
     <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -272,11 +272,14 @@
         <mxCell id="jHR6YxAc6EjQOpSINYbP-4" value="火灾场景&lt;div&gt;测试视频&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;\(i\)&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;fontFamily=宋体;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="510" y="450" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jHR6YxAc6EjQOpSINYbP-5" value="非火灾场景&lt;div&gt;测试视频&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;\(j\)&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontFamily=宋体;fontSize=15;" parent="1" vertex="1">
-          <mxGeometry x="510" y="550" width="100" height="60" as="geometry" />
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-5" value="非火灾场景&lt;div&gt;测试视频&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontFamily=宋体;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="1051" y="550" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jHR6YxAc6EjQOpSINYbP-11" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: initial;&quot; face=&quot;宋体&quot;&gt;测试&lt;/font&gt;&lt;font style=&quot;background-color: initial;&quot; face=&quot;Times New Roman&quot;&gt;10&lt;/font&gt;&lt;font style=&quot;background-color: initial;&quot; face=&quot;宋体&quot;&gt;次&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;统计&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;平均时间&amp;nbsp;&lt;font face=&quot;Times New Roman&quot;&gt;\(t_i\)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=15;align=center;" parent="1" vertex="1">
-          <mxGeometry x="827" y="678.12" width="110" height="60" as="geometry" />
+        <mxCell id="OJoJjYqP9Rx6-6Pj22bU-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endSize=2;" edge="1" parent="1" source="jHR6YxAc6EjQOpSINYbP-11" target="jHR6YxAc6EjQOpSINYbP-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jHR6YxAc6EjQOpSINYbP-11" value="&lt;div style=&quot;&quot;&gt;确定最优的 \(\omega\) 值&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=15;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1175" y="550" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="OJoJjYqP9Rx6-6Pj22bU-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=2;" edge="1" parent="1" source="jHR6YxAc6EjQOpSINYbP-21" target="OJoJjYqP9Rx6-6Pj22bU-1">
           <mxGeometry relative="1" as="geometry">
@@ -300,10 +303,13 @@
         <mxCell id="OJoJjYqP9Rx6-6Pj22bU-1" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 14px;&quot;&gt;\(i\ &amp;lt;\) &lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;宋体&quot;&gt;视频个数？&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="631" y="450" width="140" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="OJoJjYqP9Rx6-6Pj22bU-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endSize=2;" edge="1" parent="1" source="OJoJjYqP9Rx6-6Pj22bU-6" target="jHR6YxAc6EjQOpSINYbP-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OJoJjYqP9Rx6-6Pj22bU-6" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;对相同的 &lt;/font&gt;&lt;font face=&quot;Times New Roman&quot;&gt;\(\omega\)&lt;/font&gt;&lt;font face=&quot;宋体&quot;&gt; 值，计算整个测试视频的平均预警时间 &lt;/font&gt;&lt;font face=&quot;Times New Roman&quot;&gt;\(T_\omega\)&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1110" y="450" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="OJoJjYqP9Rx6-6Pj22bU-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.523;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;endSize=2;" edge="1" parent="1" source="OJoJjYqP9Rx6-6Pj22bU-1" target="OJoJjYqP9Rx6-6Pj22bU-6">
+        <mxCell id="OJoJjYqP9Rx6-6Pj22bU-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=2;" edge="1" parent="1" source="OJoJjYqP9Rx6-6Pj22bU-1" target="OJoJjYqP9Rx6-6Pj22bU-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OJoJjYqP9Rx6-6Pj22bU-8" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OJoJjYqP9Rx6-6Pj22bU-7">
